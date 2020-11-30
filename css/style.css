@@ -519,6 +519,7 @@ a.footer-logo {
 .booking-links:hover {
   font-weight: 700 !important;
 }
+
 /* mobile media-query */
 @media only screen and (max-width: 768px) {
   .book-text {
