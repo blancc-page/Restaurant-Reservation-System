@@ -360,15 +360,7 @@ function checkUserFullName() {
     let spe = document.getElementById("special-events");
     let soc = document.getElementById("social-events");
     switch (link) {
-      case "FAMILY GATHERING":
-        document.getElementById("dinner-party").src = "images/dinner-party.jpg";
-        document.getElementById("dinner-title").innerHTML = "Family Gathering";
-        document.getElementById("dinner-subtitle").innerHTML =
-          "We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience for all.";
-        fam.classList.add("font-weight-bold");
-        spe.classList.remove("font-weight-bold");
-        soc.classList.remove("font-weight-bold");
-        break;
+      
       case "SPECIAL EVENTS":
         document.getElementById("dinner-party").src = "images/special-events.jpg";
         document.getElementById("dinner-title").innerHTML = "Special Events";
@@ -389,6 +381,13 @@ function checkUserFullName() {
         break;
   
       default:
+        document.getElementById("dinner-party").src = "images/dinner-party.jpg";
+        document.getElementById("dinner-title").innerHTML = "Family Gathering";
+        document.getElementById("dinner-subtitle").innerHTML =
+          "We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience for all.";
+        fam.classList.add("font-weight-bold");
+        spe.classList.remove("font-weight-bold");
+        soc.classList.remove("font-weight-bold");
         break;
     }
   }
